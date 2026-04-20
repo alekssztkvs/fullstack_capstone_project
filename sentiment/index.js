@@ -15,7 +15,7 @@ app.use(expressPino);
 
 // Define the sentiment analysis route
 // Task 3: create the POST /sentiment analysis
-app.post('./sentiment', async (req, res) => {
+app.post('/sentiment', async (req, res) => {
 
     // Task 4: extract the sentence parameter
     const { sentence } = req.query;
