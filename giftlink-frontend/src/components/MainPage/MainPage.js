@@ -47,7 +47,7 @@ function MainPage() {
     <div className="container mt-5">
         <div className="row">
             {gifts.map((gift) => (
-                <div key={gift.id} className="col-md-4 mb-4">
+                <div key={gift._id} className="col-md-4 mb-4">
                     <div className="card product-card">
                         <div className="image-placeholder">
                             {gift.image ? (
@@ -66,7 +66,7 @@ function MainPage() {
                             </p>
                         </div>
                         <div className="card-footer">
-                            <button onClick={() => goToDetailsPage(gift.id)} className="btn btn-primary w-100">
+                            <button onClick={() => goToDetailsPage(gift._id)} className="btn btn-primary w-100">
                                 View Details
                             </button>
                         </div>
